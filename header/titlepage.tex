@@ -1,0 +1,74 @@
+%
+% titlepage.tex
+%
+% Copyright (C) 2024 by SpaceLab.
+%
+% DOCUMENTATION-TEMPLATE
+%
+% This work is licensed under the "Creative Commons Attribution Share Alike 4.0 International" license. 
+% To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.
+%
+% \brief 
+%
+% \details
+%
+% \author Gabriel Mariano Marcelino <gabriel.mm8@gmail.com>
+% \author João Cláudio Elsen Barcellos <joao.barcellos@posgrad.ufsc.br>
+% \edited by Yunior Alcantara Guevara <yagx01@gmail.com>
+%
+% \version 0.0.0
+%
+% \date 29/03/2025
+%
+
+\begin{titlepage}
+
+% Remove any format for the title page
+\thispagestyle{empty}
+
+% Add the version, configured at header/informations.tex
+\begin{flushleft}
+    \large
+    \printdocID
+\end{flushleft}
+
+\vspace{1cm}
+
+% Add the lab's logo, at figures/spacelab-logo.png
+\begin{figure}[!ht]
+    \begin{flushleft}
+        \includegraphics[width=7cm]{figures/spacelab-logo.png}
+    \end{flushleft}
+\end{figure}
+
+% Add the title, configured at header/informations.tex
+\begin{flushleft}
+    \Huge{\textbf{\printtitle}}
+    \rule[0pt]{\textwidth}{5pt}
+\end{flushleft}
+
+\vspace{0.2cm}
+
+% Add the lab, institution and local, configured at header/informations.tex
+\begin{flushleft}
+    % \textit{\large\printtype} \\
+    \textit{\printlab, \printinstitution, \printlocal}
+\end{flushleft}
+
+\vspace{2cm}
+
+% Add a ilustrative figure, if you want, at figures
+\begin{figure}[!ht]
+    \begin{center}   \includegraphics[width=0.5\textwidth]{figures/ro-logo.png}
+    \end{center}
+\end{figure}
+
+\vfill
+\vfill
+
+% Add the month and year, also configured at header/informations.tex
+\begin{flushright}
+    \MONTH~ \YEAR
+\end{flushright}
+
+\end{titlepage}

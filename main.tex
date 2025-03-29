@@ -1,0 +1,64 @@
+%
+% main.tex
+%
+% Copyright (C) 2024 by SpaceLab.
+%
+% DOCUMENTATION-TEMPLATE
+%
+% This work is licensed under the "Creative Commons Attribution Share Alike 4.0 International" license. 
+% To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.
+%
+% \brief 
+%
+% \details
+%
+% \author Gabriel Mariano Marcelino <gabriel.mm8@gmail.com>
+% \author João Cláudio Elsen Barcellos <joao.barcellos@posgrad.ufsc.br>
+% \edited by Yunior Alcantara Guevara <yagx01@gmail.com>
+%
+% \version 0.0.0
+%
+% \date 29/03/2025
+%
+
+\documentclass[a4paper,12pt]{book}
+
+% Adding the 
+\usepackage{spacelab_book}
+
+\input{header/informations}
+
+\begin{document}
+
+    \pagenumbering{gobble}
+    
+    \input{header/titlepage}
+    \cleardoublepage
+    \input{header/authorpage}
+    \cleardoublepage
+
+    \listoffigures
+    \cleardoublepage
+    
+    \listoftables
+    \cleardoublepage
+
+
+    \include{pretextual_pages/acronyms}
+    \include{pretextual_pages/variables}
+
+    \tableofcontents
+    \cleardoublepage
+
+    \pagenumbering{arabic}
+    \setcounter{page}{1}
+
+   
+    \input{chapters/ch1}
+    
+
+    \cleardoublepage
+
+    \input{chapters/references}
+
+\end{document}

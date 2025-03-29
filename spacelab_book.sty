@@ -1,0 +1,179 @@
+%
+% spacelab_book.sty
+%
+% Copyright (C) 2020 by SpaceLab.
+%
+% DOCUMENTATION-TEMPLATE
+%
+% This work is licensed under the Creative Commons Attribution-ShareAlike 4.0
+% International License. To view a copy of this license,
+% visit http://creativecommons.org/licenses/by-sa/4.0/.
+%
+
+%
+% \brief Document style customization and packages.
+%
+% \author Gabriel Mariano Marcelino <gabriel.mm8@gmail.com>
+%
+% \version 0.1.0
+%
+% \date 2020/07/16
+%
+
+\ProvidesPackage{spacelab_book}
+
+\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+\usepackage[T1]{fontenc}  
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{ae}
+\usepackage{graphicx}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{nomencl}				% Nomenclature list
+\usepackage{float}
+\usepackage{titlesec}
+\usepackage{titletoc}
+\usepackage{booktabs}
+\usepackage{emptypage}
+\usepackage{lettrine}				% First letter bigger in the begining of a chapter
+\usepackage{tabularx}
+\usepackage{enumitem}				% Custom enumerate
+\usepackage[toc,page]{appendix}     % Appendix
+\usepackage{titling}
+\usepackage{pdfpages}               % Include PDF documents
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{multirow}
+\usepackage[toc,page]{appendix}     % Appendix
+\usepackage{lscape}
+\usepackage[bottom]{footmisc}
+\usepackage{multicol}
+\usepackage{caption}                % \caption*
+\usepackage{listings}               % Codes
+\usepackage[outdir=figures/]{epstopdf}
+\usepackage{longtable}              % Multiple pages table
+\usepackage[math]{iwona}
+\usepackage{xcolor, colortbl}
+\usepackage{acronym}
+\usepackage{siunitx}
+\usepackage{bm}
+\usepackage{subcaption}
+\usepackage{tabularray}
+    \UseTblrLibrary{booktabs}
+    \DefTblrTemplate{contfoot-text}{normal}{(Continued on next page)} 
+    \SetTblrTemplate{contfoot-text}{normal} 
+    \DefTblrTemplate{conthead-text}{normal}{(continued)} 
+    \SetTblrTemplate{conthead-text}{normal}
+\usepackage{pgfgantt}
+\usepackage{datatool-base}
+
+\renewcommand*{\DTLbetweeninitials}{}
+\renewcommand*{\DTLafterinitials}{}
+\renewcommand*{\DTLafterinitialbeforehyphen}{}
+\renewcommand*{\DTLinitialhyphen}{}
+
+% New command for columns
+\newcolumntype{M}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+% Rename the command to print the variables as bold, too
+\renewcommand*{\aclabelfont}[1]{\textbf{\boldmath\acsfont{#1}}}
+
+% Rename the command \textsuperscript to \sup
+\let\sup\textsuperscript
+
+% URLs font style
+\urlstyle{same}
+
+% Bibliography style (order of appearance)
+\bibliographystyle{unsrt}
+
+% First chapter page style
+%% \titleformat{⟨command⟩}[⟨shape⟩]
+%%     {⟨format⟩}
+%%     {⟨label⟩}
+%%     {⟨sep⟩}
+%%     {⟨before-code⟩}
+%%     [⟨after-code⟩]
+\titleformat{\chapter}[display]
+    {\bfseries\large}
+    {\filright \MakeUppercase{\chaptertitlename} \thechapter}
+    {1ex}
+    {\titlerule \vspace{1ex} \filleft \bfseries\large\MakeUppercase}
+    [\vspace{1ex} \titlerule]
+
+\setcounter{secnumdepth}{3}
+\titleformat{\section}
+    {\large\MakeUppercase}
+    {\thesection}
+    {1em}
+    {}
+\titleformat{\subsection}
+    {\large\bfseries}
+    {\thesubsection}
+    {1em}
+    {}
+\titleformat{\subsubsection}
+    {\normalsize}
+    {\thesubsubsection}
+    {1em}
+    {}
+
+% Formatação do sumário
+%% \titlecontents{⟨section⟩}[⟨left⟩]
+%%     {⟨above-code⟩}
+%%     {⟨numbered-entry-format⟩}
+%%     {⟨numberless-entry-format⟩}
+%%     {⟨filler-page-format⟩}
+%%     [⟨below-code⟩]
+\titlecontents{chapter}[3.5pc]
+    {\bfseries\large}
+    {\contentslabel{3.5pc}\MakeUppercase}
+    {}
+    {\titlerule*[0.3pc]{.}\contentspage}
+
+\setcounter{tocdepth}{3}
+\titlecontents{section}[3.5pc]
+    {\large}
+    {\contentslabel{3.5pc}\MakeUppercase}
+    {}
+    {\titlerule*[0.3pc]{.}\contentspage}
+\titlecontents{subsection}[3.5pc]
+    {\bfseries\large}
+    {\contentslabel{3.5pc}}
+    {}
+    {\titlerule*[0.3pc]{.}\contentspage}
+\titlecontents{subsubsection}[3.5pc]
+    {\normalsize}
+    {\contentslabel{3.5pc}}
+    {}
+    {\titlerule*[0.3pc]{.}\contentspage}
+
+% Header style
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[RO]{\nouppercase{\rightmark}}
+\fancyhead[LE]{\nouppercase{\leftmark}}
+\fancyfoot[RO]{\thepage}
+\fancyfoot[LE]{\thepage}
+\renewcommand{\footrulewidth}{0.5pt} 
+
+% List of abbreviations
+\makenomenclature
+\setlength\nomlabelwidth{2cm}
+
+% Table cell size limit and alignment
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
+
+% Fill a cell of a table
+\newcommand{\fc}{\cellcolor{gray}}
+
+% New ambiente to present variables and symbols of an equation
+\newenvironment{conditions}
+    {\par\vspace{\abovedisplayskip}
+    \noindent\begin{tabular}
+        {>{$}l<{$} @{${}\hspace{1cm}{}$} >{\raggedright\arraybackslash}p{0.8\textwidth}}}
+    {\end{tabular}
+    \par\vspace{\belowdisplayskip}}
