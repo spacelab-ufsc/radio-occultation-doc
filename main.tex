@@ -1,64 +1,77 @@
 %
 % main.tex
 %
-% Copyright (C) 2024 by SpaceLab.
+% Copyright The GOLDS-UFSC Contributors.
 %
-% DOCUMENTATION-TEMPLATE
+% GOLDS-UFSC Documentation
 %
-% This work is licensed under the "Creative Commons Attribution Share Alike 4.0 International" license. 
-% To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.
+% This work is licensed under the Creative Commons Attribution-ShareAlike 4.0
+% International License. To view a copy of this license,
+% visit http://creativecommons.org/licenses/by-sa/4.0/.
 %
-% \brief 
+
 %
-% \details
+% \brief Main file.
 %
 % \author Gabriel Mariano Marcelino <gabriel.mm8@gmail.com>
-% \author João Cláudio Elsen Barcellos <joao.barcellos@posgrad.ufsc.br>
-% \edited by Yunior Alcantara Guevara <yagx01@gmail.com>
 %
-% \version 0.0.0
+% \version 0.3.0
 %
-% \date 29/03/2025
+% \date 2020/06/05
 %
 
 \documentclass[a4paper,12pt]{book}
 
-% Adding the 
 \usepackage{spacelab_book}
 
-\input{header/informations}
+\title{Radio Occultation Design and Mission Overview}
+\author{SpaceLab}
+\date{\today}
+
+% File metadata
+\hypersetup
+{
+    pdfauthor   = {SpaceLab},
+    pdfsubject  = {\thetitle},
+    pdftitle    = {\thetitle},
+    pdfkeywords = {Nanosatellites, CubeSats, GOLDS-UFSC}
+}
 
 \begin{document}
 
-    \pagenumbering{gobble}
-    
+    \pagenumbering{roman}
+    \setcounter{page}{1}
+
     \input{header/titlepage}
     \cleardoublepage
     \input{header/authorpage}
     \cleardoublepage
 
     \listoffigures
-    \cleardoublepage
-    
+    \addcontentsline{toc}{chapter}{List of Figures}
+
     \listoftables
-    \cleardoublepage
+    \addcontentsline{toc}{chapter}{List of Tables}
 
-
-    \include{pretextual_pages/acronyms}
-    \include{pretextual_pages/variables}
+    \printnomenclature
+    \addcontentsline{toc}{chapter}{Nomenclature}
 
     \tableofcontents
     \cleardoublepage
-
+    
     \pagenumbering{arabic}
     \setcounter{page}{1}
 
-   
-    \input{chapters/ch1}
-    
-
-    \cleardoublepage
-
+    \input{chapters/introduction}
+    \input{chapters/management}
+    \input{chapters/conops}
+    \input{chapters/budgets}
+    \input{chapters/design}
+    \input{chapters/subsystems}
+    \input{chapters/ground_segment}
+    \input{chapters/tests}
+    \input{chapters/ait}
     \input{chapters/references}
+    \input{appendices/appendices}
 
 \end{document}
