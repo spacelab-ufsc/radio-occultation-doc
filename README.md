@@ -1,5 +1,5 @@
 <h1 align="center">
-    <a href="spacelab.ufsc.br"><img src="https://github.com/spacelab-ufsc/golds-ufsc-doc/blob/master/figures/rocus-patch.png" alt="RADIO OCCULTATION MISSION" width="30%"></a>
+    <a href="spacelab.ufsc.br"><img src="https://github.com/spacelab-ufsc/radio-occultation-doc/blob/master/figures/rocus-patch.png" alt="rocus" width="30%"></a>
     <br>
      RADIO OCCULTATION MISSION
     <br>
