@@ -1,5 +1,5 @@
 <h1 align="center">
-    <a href="spacelab.ufsc.br"><img src="https://github.com/spacelab-ufsc/radio-occultation-doc/blob/master/figures/rocus-patch.png" alt="rocus" width="30%"></a>
+    <a href="spacelab.ufsc.br"><img src="https://github.com/spacelab-ufsc/radio-occultation-doc/blob/main/figures/rocus-patch.png" alt="rocus" width="40%"></a>
     <br>
      RADIO OCCULTATION MISSION
     <br>
@@ -51,7 +51,7 @@ Besides performing the EDC main functionalities, the mission will contribute to 
 It also acts as an experimenting platform for research in space technologies developed before, during, and after the operations phase of the mission, providing empirical data for experiments of many kinds. GOLDS-UFSC is expected to be launched by the end of 2020. Details of all systems developed for the mission are described in the documents listed in this repository in a top-level fashion and the detailed technical module documents in their respective repositories. This documentation structure is described in the <a href="#repository-organization">repository organization</a> section.
 
 <p align="center">
-    <img width="65%" src="https://github.com/spacelab-ufsc/radio-occultation-doc/blob/master/figures/rocus-sat.png" />
+    <img width="65%" src="https://github.com/spacelab-ufsc/radio-occultation-doc/blob/main/figures/rocus-sat.png" />
 </p>
 
 ## Mission Statement
@@ -73,7 +73,7 @@ GOLDS-UFSC is a service module for INPE’s EDC payload, and also a platform for
 The following sections describe the mission subsystems, which placement, positioning and attachement can be seen in the next figure. Also, it is provided a quick review of the development status of each module throught the use of dynamic badges. The profile icons right above the module name is the GitHub contributors of this repository, which might not included all contributors to the project as a whole. Refer to the specific repositories or the website for a complete list.  
 
 <p align="center">
-  <img width="65%" src="https://github.com/spacelab-ufsc/golds-ufsc-doc/blob/master/figures/exploded-view.png" />
+  <img width="65%" src="https://github.com/spacelab-ufsc/golds-ufsc-doc/blob/main/figures/exploded-view.png" />
 </p>
 
 <br><br>
@@ -91,7 +91,7 @@ The following sections describe the mission subsystems, which placement, positio
 	<a href="https://github.com/spacelab-ufsc/obdh2/releases">
 		<img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/spacelab-ufsc/obdh2?style=for-the-badge">
 	</a>
-	<a href="https://github.com/spacelab-ufsc/obdh2/commits/master">
+	<a href="https://github.com/spacelab-ufsc/obdh2/commits/main">
 		<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/spacelab-ufsc/obdh2?style=for-the-badge">
 	</a>
 	<a href="https://github.com/spacelab-ufsc/obdh2/issues">
@@ -100,7 +100,7 @@ The following sections describe the mission subsystems, which placement, positio
 </p>
 
 <a href="https://github.com/spacelab-ufsc/obdh2">
-<img align="right" width="25%" src="https://github.com/spacelab-ufsc/obdh2/blob/master/doc/user_manual/figures/obdh2-pcb-top.png">
+<img align="right" width="25%" src="https://github.com/spacelab-ufsc/obdh2/blob/main/doc/user_manual/figures/obdh2-pcb-top.png">
 </a>
 
 The SpaceLab OBDH2 (On-Board Data Handling 2.0) is one of the service modules developed for GOLDS-UFSC Cubesat Mission. The OBDH2 is responsible to synchronize actions and the data flow between other modules (ie. EPS, Payloads) and the Earth segment. It packs the generated data into data frames and transmit back to Earth through TTC module, or stores it on a non-volatile memory for later retrieval. Commands sent from Earth segment to the cubesat will be received by the radio transceivers located in the TTC module and redirected to the OBDH2, which takes the appropriate action or forward them to the responsible module. All the OBDH2 project, source and documentation files are available freely on a [GitHub repository](https://github.com/spacelab-ufsc/obdh2) under its respective licenses.
@@ -120,7 +120,7 @@ The SpaceLab OBDH2 (On-Board Data Handling 2.0) is one of the service modules de
 	<a href="https://github.com/spacelab-ufsc/ttc2/releases">
 		<img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/spacelab-ufsc/ttc2?style=for-the-badge">
 	</a>
-	<a href="https://github.com/spacelab-ufsc/ttc2/commits/master">
+	<a href="https://github.com/spacelab-ufsc/ttc2/commits/main">
 		<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/spacelab-ufsc/ttc2?style=for-the-badge">
 	</a>
 	<a href="https://github.com/spacelab-ufsc/ttc2/issues">
