@@ -42,7 +42,7 @@
 </p>
 
 
-## Overview
+# Overview
 
 The Radio Occultation Mission focuses on the development of a CubeSat dedicated to the acquisition of GNSS radio occultation data, expanding the national atmospheric observation capacity. The satellite will employ an L1-band GNSS front-end coupled to an FPGA/RISC-V SoC to pre-process onboard the phases and amplitudes of GNSS signals touched by the atmosphere, generating refraction angle profiles.
 
@@ -54,27 +54,203 @@ This documentation structure is described in the <a href="#repository-organizati
     <img width="65%" src="https://github.com/spacelab-ufsc/radio-occultation-doc/blob/main/figures/rocus-sat.png" />
 </p>
 
-## Mission Statement
+# Mission Statement
 
-radio-occultation is a service module for INPE’s EDC payload, and also a platform for the test of core spacecraft technologies in a microgravity, high-radiation and low Earth orbit environment.
+TBD
 
-## Mission Objectives
+# Mission Objectives
 
-1. To serve as a host platform for the EDC payload.
-2. Validate the EDC payload in orbit.
-3. Validate EDC functionality in orbit.
-4. Validate core-satellite functions in orbit.
-5. Evaluate the behavior of the core modules.
-6. Perform experiments on radiation effects in electronic components in orbit.
-7. Serve as relay for amateur radio communications.
+1. TBD
+2. TBD
 
-## Development 
+# Development 
 
 The following sections describe the mission subsystems, which placement, positioning and attachement can be seen in the next figure. Also, it is provided a quick review of the development status of each module throught the use of dynamic badges. The profile icons right above the module name is the GitHub contributors of this repository, which might not included all contributors to the project as a whole. Refer to the specific repositories or the website for a complete list.  
 
 <p align="center">
-  <img width="65%" src="https://github.com/spacelab-ufsc/radio-occultation-doc/blob/main/figures/exploded-view.png" />
+  <img width="65%" src="https://github.com/spacelab-ufsc/radio-occultation-doc/blob/main/figures/exploded-view-tbd.png" />
 </p>
+
+<br><br>
+
+<a href="https://github.com/spacelab-ufsc/obdh2/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=spacelab-ufsc/ro-instrument" />
+</a>
+
+## Radio Occultation Instrument
+
+<p align="left">
+	<a href="https://github.com/spacelab-ufsc/spacelab#versioning">
+		<img src="https://img.shields.io/badge/status-in%20development-red?style=for-the-badge">
+	</a>
+	<a href="https://github.com/spacelab-ufsc/ro-instrument/releases">
+		<img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/spacelab-ufsc/ro-instrument?style=for-the-badge">
+	</a>
+	<a href="https://github.com/spacelab-ufsc/ro-instrument/commits/main">
+		<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/spacelab-ufsc/ro-instrument?style=for-the-badge">
+	</a>
+	<a href="https://github.com/spacelab-ufsc/ro-instrument/issues">
+		<img alt="GitHub issues" src="https://img.shields.io/github/issues/spacelab-ufsc/ro-instrument?style=for-the-badge">
+	</a>
+</p>
+
+<br><br>
+
+<a href="https://github.com/spacelab-ufsc/r0-antenna/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=spacelab-ufsc/ro-antenna" />
+</a>
+
+
+## Radio Occultation Instrument Antenna
+
+<p align="left">
+	<a href="https://github.com/spacelab-ufsc/spacelab#versioning">
+		<img src="https://img.shields.io/badge/status-in%20development-red?style=for-the-badge">
+	</a>
+	<a href="https://github.com/spacelab-ufsc/ro-antenna/releases">
+		<img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/spacelab-ufsc/ro-antenna?style=for-the-badge">
+	</a>
+	<a href="https://github.com/spacelab-ufsc/ro-antenna/commits/main">
+		<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/spacelab-ufsc/ro-antenna?style=for-the-badge">
+	</a>
+	<a href="https://github.com/spacelab-ufsc/ro-antenna/issues">
+		<img alt="GitHub issues" src="https://img.shields.io/github/issues/spacelab-ufsc/ro-antenna?style=for-the-badge">
+	</a>
+</p>
+
+<br><br>
+
+<a href="https://github.com/spacelab-ufsc/adcs/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=spacelab-ufsc/adcs" />
+</a>
+
+## ADCS - Attitude Determination and Control System
+
+<p align="left">
+	<a href="https://github.com/spacelab-ufsc/spacelab#versioning">
+		<img src="https://img.shields.io/badge/status-in--orbit%20validated-blue?style=for-the-badge">
+	</a>
+</p>
+
+<img align="right" width="25%" src="https://github.com/spacelab-ufsc/radio-occultation-doc/blob/main/figures/adcs.png">
+
+Our Attitude Control System (ACS) is a passive attitude system, which uses Earth's magnetic field to rotate and stabilize the satellite. The system is composed of one magnet to create a force to align the magnet with the Earth's magnetic field and four hysteresis bars to damp the cube oscillations and stabilize. They are placed in positions to minimize the magnet effect on the bars. As a passive magnetic attitude control system is used, it is possible to stabilize only two axis, and so, the cubesat will still rotate around one of its axis, even after stabilized.
+
+<br><br>
+
+<a href="https://github.com/spacelab-ufsc/sband-antenna/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=spacelab-ufsc/sband-antenna" />
+</a>
+
+## S-Band Antenna
+
+<p align="left">
+	<a href="https://github.com/spacelab-ufsc/spacelab#versioning">
+		<img src="https://img.shields.io/badge/status-in--orbit%20validated-blue?style=for-the-badge">
+	</a>
+</p>
+
+<img align="right" width="25%" src="https://github.com/spacelab-ufsc/radio-occultation-doc/blob/main/figures/antennas/sband-antenna-top.png">
+
+Our Attitude Control System (ACS) is a passive attitude system, which uses Earth's magnetic field to rotate and stabilize the satellite. The system is composed of one magnet to create a force to align the magnet with the Earth's magnetic field and four hysteresis bars to damp the cube oscillations and stabilize. They are placed in positions to minimize the magnet effect on the bars. As a passive magnetic attitude control system is used, it is possible to stabilize only two axis, and so, the cubesat will still rotate around one of its axis, even after stabilized.
+
+<br><br>
+
+<a href="https://github.com/spacelab-ufsc/gnss-active-antenna/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=spacelab-ufsc/gnss-active-antenna" />
+</a>
+
+## GNSS Antenna
+
+<p align="left">
+	<a href="https://github.com/spacelab-ufsc/spacelab#versioning">
+		<img src="https://img.shields.io/badge/status-in--orbit%20validated-blue?style=for-the-badge">
+	</a>
+</p>
+
+<img align="right" width="25%" src="https://github.com/spacelab-ufsc/radio-occultation-doc/blob/main/figures/antennas/gnss-active-antenna-top.png">
+
+Our Attitude Control System (ACS) is a passive attitude system, which uses Earth's magnetic field to rotate and stabilize the satellite. The system is composed of one magnet to create a force to align the magnet with the Earth's magnetic field and four hysteresis bars to damp the cube oscillations and stabilize. They are placed in positions to minimize the magnet effect on the bars. As a passive magnetic attitude control system is used, it is possible to stabilize only two axis, and so, the cubesat will still rotate around one of its axis, even after stabilized.
+
+<br><br>
+
+<!--
+<a href="https://github.com/spacelab-ufsc/antenna-fd/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=spacelab-ufsc/" />
+</a>
+-->
+
+## Filamentar Antenna
+
+<!--
+<p align="left">
+	<a href="https://github.com/spacelab-ufsc/spacelab#versioning">
+		<img src="https://img.shields.io/badge/status-in%20development-red?style=for-the-badge">
+	</a>
+	<a href="https://github.com/spacelab-ufsc/antenna-fd/releases">
+		<img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/spacelab-ufsc/antenna-fd?style=for-the-badge">
+	</a>
+	<a href="https://github.com/spacelab-ufsc/antenna-fd/commits/main">
+		<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/spacelab-ufsc/antenna-fd?style=for-the-badge">
+	</a>
+	<a href="https://github.com/spacelab-ufsc/antenna-fd/issues">
+		<img alt="GitHub issues" src="https://img.shields.io/github/issues/spacelab-ufsc/antenna-fd?style=for-the-badge">
+	</a>
+</p>
+
+-->
+
+<a href="https://github.com/spacelab-ufsc/radio-occultation-doc">
+<img align="right" width="25%" src="https://github.com/spacelab-ufsc/radio-occultation-doc/blob/main/figures/antennas/antenna-fd.png">
+	
+</a>
+
+
+<!-- <img align="right" width="25%" src="https://github.com/spacelab-ufsc/radio-occultation-doc/blob/main/figures/antenna-fd.png"> -->
+
+The SpaceLab Filamentar Antenna for CubeSats System 1U/3U contains up to four tape spring antennas of up to 50 cm length. The deployment system relies on a thermal knife composed of one wire and two redundant heating elements per tape. RF phasing / BalUn circuitry ties the antennas together in the user-defined configuration. Depending on the configuration, one or two radios in the CubeSat can connect to the antenna system by means of miniature RF connectors. The top face of the antenna system can accommodate a two solar cell solar panel and it can be customized for accommodating sensors or other systems to protrude to the exterior, e.g. camera apertures. The antenna is compatible with any UHF and/or VHF radio system. 
+
+<br><br>
+
+
+## Solar Panels
+
+<p align="left">
+	<a href="https://github.com/spacelab-ufsc/spacelab#versioning">
+		<img src="https://img.shields.io/badge/status-flight%20ready-green?style=for-the-badge">
+	</a>
+	<a href="https://github.com/spacelab-ufsc/spacelab#versioning">
+		<img src="https://img.shields.io/badge/purchased%20module-ORBITAL-lightgray?style=for-the-badge">
+	</a>
+</p>
+
+<img align="right" width="25%" src="https://github.com/spacelab-ufsc/radio-occultation-doc/blob/main/figures/orbital-solar-panel.png">
+
+The solar panels are manufactures by TBD. The panels features protection diodes and high-efficiency solar cells, which are the CESI's CTJ-30 with dimensions 6.9 cm x 3.9 cm (area 26.5 cm2). This cell is qualified for space use by ESA with an efficiency of 30%.
+
+<br><br>
+
+## USIPED - 6U Mechanical Structure
+
+<p align="left">
+	<a href="https://github.com/spacelab-ufsc/spacelab#versioning">
+		<img src="https://img.shields.io/badge/status-under%20testing-yellow?style=for-the-badge">
+	</a>
+	<a href="https://github.com/spacelab-ufsc/spacelab#versioning">
+		<img src="https://img.shields.io/badge/purchased%20module-USIPED-lightgray?style=for-the-badge">
+	</a>
+</p>
+
+<img align="right" width="25%" src="https://github.com/spacelab-ufsc/radio-occultation-doc/blob/main/figures/usiped-2u-structure.jpg">
+
+The USIPED 6-Unit CubeSat structure is developed as a generic, modular satellite structure based upon the CubeSat standard. The modular chassis allows for up to two 1-Unit stack of PCBs, or other modules, to be mounted inside the chassis, using the PC-104 standard and spacers attached to the structure. In addition, there are 4 slots in the middle section, providing space for the interface boards and the ACS. The solar panels and antennas are externally mounted, providing a complete mechanical solution.
+
+<br><br>
+
+
+# Service platform
+
+SpaceLab FloripaSat-2 modules
 
 <br><br>
 
@@ -194,40 +370,6 @@ The battery module is a separeted board from the EPS in order to accommodate 4 l
 
 <br><br>
 
-## Payload EDC - Environmental Data Collector Payload
-
-<p align="left">
-	<a href="https://github.com/spacelab-ufsc/spacelab#versioning">
-		<img src="https://img.shields.io/badge/status-under%20testing-yellow?style=for-the-badge">
-	</a>
-	<a href="">
-		<img src="https://img.shields.io/badge/release-v1.1-blue?style=for-the-badge">
-	</a>
-</p>
-
-<img align="right" width="25%" src="https://github.com/spacelab-ufsc/radio-occultation-doc/blob/main/figures/edc-pcb-top.png">
-
-The Environmental Data Collector (EDC) is a CubeSat-compatible payload that decodes signals from Platform Transmitter Terminals (PTTs) belonging to the Brazilian Environmental Data Collection System and the Argos-2 system. The EDC is composed by an RF Front End and a Processing Unit. The processing unit is based on an SoC FPGA, which configures the external components at system initialization, processes the digital signal from the RF Front End and handles the communication with the On-Board Computer (OBC). 
-
-<br><br>
-
-## Payload-X - Redundant OBDH
-
-<p align="left">
-	<a href="https://github.com/spacelab-ufsc/spacelab#versioning">
-		<img src="https://img.shields.io/badge/status-in%20development-red?style=for-the-badge">
-	</a>
-	<a href="">
-		<img src="https://img.shields.io/badge/release-v1.3-blue?style=for-the-badge">
-	</a>
-</p>
-
-<img align="right" width="25%" src="https://github.com/spacelab-ufsc/radio-occultation-doc/blob/main/figures/payload-x-pcb-top.png">
-
-The Payload-X was developed to perform an in-orbit validation (IOV) of two new technologies: a novel radiationhardened FPGA and an IP Core for telemetry and telecommand following the ECSS/CCSDS standard. The hardware was designed following the European Space Agency (ESA) space product standards. It has a layered structure that mitigates the effects of radiation and electromagnetic interference on the components signals. The implementation stored in the FPGA includes not only the TC/TM IP core, but also an abstract execution graph, in the form of a state machine, emulating the basic functionalities of an on-board computer (OBC). The communications module handles TC and TM data and it is an interface between the radio transceiver and the emulated OBC. The emulated OBC is based on the ECSS Telemetry & Telecommand Packet Utilization Standard (PUS), and it performs the validation of the routed telecommand received, and the packeting of the telemetry data acquired by the available sensors.
-
-<br><br>
-
 <a href="https://github.com/spacelab-ufsc/interface-board/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=spacelab-ufsc/interface-board" />
 </a>
@@ -254,6 +396,75 @@ The Payload-X was developed to perform an in-orbit validation (IOV) of two new t
 </a>
 
 Interstage Interface Panels (IIP) are vertical mounted PCBs designed to give external access to the modules inside of a 2U or 3U CubeSat during final assembly, integration and testing. IIP is composed by 3 different boards, the complete set allows for the nanosatellite to be charged, programed and debugged. All the IIP project, source and documentation files are available freely on a [GitHub repository](https://github.com/spacelab-ufsc/interface-board) under its respective licenses.
+
+<br><br>
+
+
+
+
+## Partners
+
+#### Space Technology Research Laboratory (SpaceLab)
+
+<p float="left">
+  	<a href="https://spacelab.ufsc.br/">
+  		<img src="https://github.com/spacelab-ufsc/radio-occultation-doc/blob/main/figures/spacelab-logo-full-color-rgb-1000px%4072ppi.png" width="37%" />
+  	</a>
+</p>
+
+#### Federal University of Santa Catarina (UFSC)
+
+<p float="left">
+    <a href="https://ufsc.br/">
+        <img src="https://github.com/spacelab-ufsc/radio-occultation-doc/blob/main/figures/ufsc-logo.png" width="30%" />
+    </a>
+</p>
+
+#### Brazilian Space Agency (AEB)
+
+<p float="left">
+  	<a href="https://www.gov.br/aeb/pt-br">
+  		<img src="https://github.com/spacelab-ufsc/radio-occultation-doc/blob/main/figures/aeb-logo.png" width="27%" />
+  	</a>
+</p>
+
+#### Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq)
+
+<p float="left">
+  	<a href="https://www.gov.br/aeb/pt-br">
+  		<img src="https://github.com/spacelab-ufsc/radio-occultation-doc/blob/main/figures/cnpq-logo.png" width="27%" />
+  	</a>
+</p>
+
+## Licenses
+
+The SpaceLab follows a strong open-source approach in order to encourage and promote knowledge. Then, refer to the LICENSE file in the GitHub page for each repository. This mission uses different open-source licenses accordingly to projects needs and restrictions. It is used GNU General Public License v3.0 for firmware sources, CERN Open Hardware License v2.0 for hardware files, and CC BY-SA 4.0 for the documentation. Some third-part files and libraries are subjected to their specific terms and licenses. Please, double check licenses and third-part components used with other licenses, since restrictions might apply.
+
+## Notes
+
+This repository includes the sources of the main documentation. In order to edit/compile/generate, check the following:  
+
+#### Dependencies
+
+* ```latexmk```
+* ```texlive-epstopdf```
+
+#### Generating the PDF file
+
+```
+make
+```
+
+
+
+
+<!--
+TBD
+
+
+
+
+
 
 <br><br>
 
@@ -286,83 +497,28 @@ The PC-104 Adapter is a set of two boards that allow the connection between two 
 
 <br><br>
 
-## ACS - Attitude Control System
 
-<p align="left">
-	<a href="https://github.com/spacelab-ufsc/spacelab#versioning">
-		<img src="https://img.shields.io/badge/status-in--orbit%20validated-blue?style=for-the-badge">
-	</a>
-</p>
-
-<img align="right" width="25%" src="https://github.com/spacelab-ufsc/radio-occultation-doc/blob/main/figures/adcs.png">
-
-Our Attitude Control System (ACS) is a passive attitude system, which uses Earth's magnetic field to rotate and stabilize the satellite. The system is composed of one magnet to create a force to align the magnet with the Earth's magnetic field and four hysteresis bars to damp the cube oscillations and stabilize. They are placed in positions to minimize the magnet effect on the bars. As a passive magnetic attitude control system is used, it is possible to stabilize only two axis, and so, the cubesat will still rotate around one of its axis, even after stabilized.
 
 <br><br>
 
-## USIPED - 2U Mechanical Structure
+## Payload EDC - Environmental Data Collector Payload
 
 <p align="left">
 	<a href="https://github.com/spacelab-ufsc/spacelab#versioning">
 		<img src="https://img.shields.io/badge/status-under%20testing-yellow?style=for-the-badge">
 	</a>
-	<a href="https://github.com/spacelab-ufsc/spacelab#versioning">
-		<img src="https://img.shields.io/badge/purchased%20module-USIPED-lightgray?style=for-the-badge">
+	<a href="">
+		<img src="https://img.shields.io/badge/release-v1.1-blue?style=for-the-badge">
 	</a>
 </p>
 
-<img align="right" width="25%" src="https://github.com/spacelab-ufsc/radio-occultation-doc/blob/main/figures/usiped-2u-structure.jpg">
+<img align="right" width="25%" src="https://github.com/spacelab-ufsc/radio-occultation-doc/blob/main/figures/edc-pcb-top.png">
 
-The USIPED 2-Unit CubeSat structure is developed as a generic, modular satellite structure based upon the CubeSat standard. The modular chassis allows for up to two 1-Unit stack of PCBs, or other modules, to be mounted inside the chassis, using the PC-104 standard and spacers attached to the structure. In addition, there are 4 slots in the middle section, providing space for the interface boards and the ACS. The solar panels and antennas are externally mounted, providing a complete mechanical solution.
+The Environmental Data Collector (EDC) is a CubeSat-compatible payload that decodes signals from Platform Transmitter Terminals (PTTs) belonging to the Brazilian Environmental Data Collection System and the Argos-2 system. The EDC is composed by an RF Front End and a Processing Unit. The processing unit is based on an SoC FPGA, which configures the external components at system initialization, processes the digital signal from the RF Front End and handles the communication with the On-Board Computer (OBC). 
 
 <br><br>
 
-<a href="https://github.com/spacelab-ufsc/antenna-fd/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=spacelab-ufsc/" />
-</a>
 
-## SpaceLab Filamentar Antenna
-
-<p align="left">
-	<a href="https://github.com/spacelab-ufsc/spacelab#versioning">
-		<img src="https://img.shields.io/badge/status-in%20development-red?style=for-the-badge">
-	</a>
-	<a href="https://github.com/spacelab-ufsc/antenna-fd/releases">
-		<img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/spacelab-ufsc/antenna-fd?style=for-the-badge">
-	</a>
-	<a href="https://github.com/spacelab-ufsc/antenna-fd/commits/main">
-		<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/spacelab-ufsc/antenna-fd?style=for-the-badge">
-	</a>
-	<a href="https://github.com/spacelab-ufsc/antenna-fd/issues">
-		<img alt="GitHub issues" src="https://img.shields.io/github/issues/spacelab-ufsc/antenna-fd?style=for-the-badge">
-	</a>
-</p>
-
-<a href="https://github.com/spacelab-ufsc/antenna-fd">
-<img align="right" width="25%" src="https://github.com/spacelab-ufsc/antenna-fd/blob/main/doc/figures/antenna-fd.png">
-</a>
-
-
-<img align="right" width="25%" src="https://github.com/spacelab-ufsc/radio-occultation-doc/blob/main/figures/antenna-fd.png">
-
-The SpaceLab Filamentar Antenna for CubeSats System 1U/3U contains up to four tape spring antennas of up to 50 cm length. The deployment system relies on a thermal knife composed of one wire and two redundant heating elements per tape. RF phasing / BalUn circuitry ties the antennas together in the user-defined configuration. Depending on the configuration, one or two radios in the CubeSat can connect to the antenna system by means of miniature RF connectors. The top face of the antenna system can accommodate a two solar cell solar panel and it can be customized for accommodating sensors or other systems to protrude to the exterior, e.g. camera apertures. The antenna is compatible with any UHF and/or VHF radio system. 
-
-<br><br>
-
-## SpaceLab - Solar Panels
-
-<p align="left">
-	<a href="https://github.com/spacelab-ufsc/spacelab#versioning">
-		<img src="https://img.shields.io/badge/status-flight%20ready-green?style=for-the-badge">
-	</a>
-	<a href="https://github.com/spacelab-ufsc/spacelab#versioning">
-		<img src="https://img.shields.io/badge/purchased%20module-ORBITAL-lightgray?style=for-the-badge">
-	</a>
-</p>
-
-<img align="right" width="25%" src="https://github.com/spacelab-ufsc/radio-occultation-doc/blob/main/figures/orbital-solar-panel.png">
-
-The solar panels are manufactures by ORBITAL, a Brazilian company. The panels features protection diodes and high-efficiency solar cells, which are the CESI's CTJ-30 with dimensions 6.9 cm x 3.9 cm (area 26.5 cm2). This cell is qualified for space use by ESA with an efficiency of 29.5% (AM0, BOL). The panels do not include magnetorquers, sensors and others devices.
 
 <br><br>
 
@@ -395,6 +551,11 @@ The SpaceLab FlatSat Platform is a testbed for cubesat pcb modules. FlatSats ena
 
 <br><br>
 
+
+
+
+<br><br>
+
 <a href="https://github.com/spacelab-ufsc/spacelab-decoder/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=spacelab-ufsc/spacelab-decoder" />
 </a>
@@ -424,23 +585,8 @@ SpaceLab-Decoder is a software to decode audio records from the satellites of Sp
 
 <br><br>
 
-## Partners
 
-#### Space Technology Research Laboratory (SpaceLab)
 
-<p float="left">
-  	<a href="https://spacelab.ufsc.br/">
-  		<img src="https://github.com/spacelab-ufsc/radio-occultation-doc/blob/main/figures/spacelab-logo-full-color-rgb-1000px%4072ppi.png" width="37%" />
-  	</a>
-</p>
-
-#### Federal University of Santa Catarina (UFSC)
-
-<p float="left">
-    <a href="https://ufsc.br/">
-        <img src="https://github.com/spacelab-ufsc/radio-occultation-doc/blob/main/figures/ufsc-logo.png" width="30%" />
-    </a>
-</p>
 
 #### National Institute for Space Research - Northeast Regional Center (INPE-RN)
 
@@ -449,37 +595,4 @@ SpaceLab-Decoder is a software to decode audio records from the satellites of Sp
   		<img src="https://github.com/spacelab-ufsc/radio-occultation-doc/blob/master/figures/inpe-logo.png" width="23%" />
   	</a> 
 </p>
-
-#### Brazilian Space Agency (AEB)
-
-<p float="left">
-  	<a href="https://www.gov.br/aeb/pt-br">
-  		<img src="https://github.com/spacelab-ufsc/radio-occultation-doc/blob/main/figures/aeb-logo.png" width="27%" />
-  	</a>
-</p>
-
-#### Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq)
-
-<p float="left">
-  	<a href="https://www.gov.br/aeb/pt-br">
-  		<img src="https://github.com/spacelab-ufsc/radio-occultation-doc/blob/main/figures/cnpq-logo.png" width="27%" />
-  	</a>
-</p>
-## Licenses
-
-The SpaceLab follows a strong open-source approach in order to encourage and promote knowledge. Then, refer to the LICENSE file in the GitHub page for each repository. This mission uses different open-source licenses accordingly to projects needs and restrictions. It is used GNU General Public License v3.0 for firmware sources, CERN Open Hardware License v2.0 for hardware files, and CC BY-SA 4.0 for the documentation. Some third-part files and libraries are subjected to their specific terms and licenses. Please, double check licenses and third-part components used with other licenses, since restrictions might apply.
-
-## Notes
-
-This repository includes the sources of the main documentation. In order to edit/compile/generate, check the following:  
-
-#### Dependencies
-
-* ```latexmk```
-* ```texlive-epstopdf```
-
-#### Generating the PDF file
-
-```
-make
-```
+-->
