@@ -128,7 +128,7 @@ The following sections describe the mission subsystems, which placement, positio
 
 <p align="left">
 	<a href="https://github.com/spacelab-ufsc/spacelab#versioning">
-		<img src="https://img.shields.io/badge/status-in--orbit%20validated-blue?style=for-the-badge">
+		<img src="https://img.shields.io/badge/status-in%20development-red?style=for-the-badge">
 	</a>
 </p>
 
@@ -137,6 +137,8 @@ The following sections describe the mission subsystems, which placement, positio
 Our Attitude Control System (ACS) is a passive attitude system, which uses Earth's magnetic field to rotate and stabilize the satellite. The system is composed of one magnet to create a force to align the magnet with the Earth's magnetic field and four hysteresis bars to damp the cube oscillations and stabilize. They are placed in positions to minimize the magnet effect on the bars. As a passive magnetic attitude control system is used, it is possible to stabilize only two axis, and so, the cubesat will still rotate around one of its axis, even after stabilized.
 
 <br><br>
+<br><br>
+
 
 <a href="https://github.com/spacelab-ufsc/sband-antenna/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=spacelab-ufsc/sband-antenna" />
@@ -146,14 +148,18 @@ Our Attitude Control System (ACS) is a passive attitude system, which uses Earth
 
 <p align="left">
 	<a href="https://github.com/spacelab-ufsc/spacelab#versioning">
-		<img src="https://img.shields.io/badge/status-in--orbit%20validated-blue?style=for-the-badge">
+		<img src="https://img.shields.io/badge/status-in%20development-red?style=for-the-badge">
 	</a>
 </p>
 
 <img align="right" width="25%" src="https://github.com/spacelab-ufsc/radio-occultation-doc/blob/main/figures/antennas/sband-antenna-top.png">
 
 ​The S-Band Antenna project consists of developing an antenna for the S-Band frequency (2.200-2.290 GHz), which its initial goal is to be used in a mission of Radio Occultation for the downlink of data.​
+
 <br><br>
+<br><br>
+<br><br>
+
 
 <a href="https://github.com/spacelab-ufsc/gnss-active-antenna/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=spacelab-ufsc/gnss-active-antenna" />
@@ -163,7 +169,7 @@ Our Attitude Control System (ACS) is a passive attitude system, which uses Earth
 
 <p align="left">
 	<a href="https://github.com/spacelab-ufsc/spacelab#versioning">
-		<img src="https://img.shields.io/badge/status-in--orbit%20validated-blue?style=for-the-badge">
+		<img src="https://img.shields.io/badge/status-in%20development-red?style=for-the-badge">
 	</a>
 </p>
 
@@ -171,6 +177,8 @@ Our Attitude Control System (ACS) is a passive attitude system, which uses Earth
 
 The GNSS Active Antenna project consists of developing an active antenna for the L1 band (1.565GHz), integrating a low noise amplifier (LNA) powered by a voltage regulator that converts 5V to 3.3V, with the power being injected into the coaxial line through a bias tee circuit.
 
+<br><br>
+<br><br>
 <br><br>
 
 <!--
