@@ -20,13 +20,13 @@
 % \date 2020/06/06
 %
 
-\chapter{Ground Segment} \label{ch:ground-segment}
+\chapter{ \textcolor{red}{TODO} Ground Segment} \label{ch:ground-segment}
 
 This chapter describes the ground segment of the mission. It is composed of two ground stations (one at the INPE-RN installations and the other at the SpaceLab installations) and many data collection platforms (PCD\nomenclature{\textbf{PCD}}{\textit{``Plataforma de Coleta de Dados'', or Data Collection Platform}}, or \textit{``Plataforma de Coleta de Dados''}), installed at a variety of locations on the Brazilian territory.
 
 The control of the mission and the reception of the collected data will be performed mainly at these two ground stations, but if necessary, other stations can execute this task. Any station in the world can use the amateur radio link since having the required equipment to it.
 
-\section{UFSC Ground Station}
+\section{ \textcolor{red}{TODO} UFSC Ground Station}
 
 The UFSC ground station is currently being developed and prepared for this mission. This section presents the project of this station. A general block diagram can be seen in \autoref{fig:grs-block-diagram}.
 
@@ -40,7 +40,7 @@ The UFSC ground station is currently being developed and prepared for this missi
 
 In the following sections, a description of the main components of the station will be presented.
 
-\subsection{Hardware}
+\subsection{ \textcolor{red}{TODO} Hardware}
 
 This part describes the hardware side of the UFSC ground station and details the main peripherals that will be used in this project. Most of the components described here are represented in \autoref{fig:grs-block-diagram}.
 
@@ -253,7 +253,7 @@ In the \autoref{fig:server} can be seen a picture of the used server, and in \au
     \end{center}
 \end{figure}
 
-\subsection{Satellite Tracking}
+\subsection{ \textcolor{red}{TODO} Satellite Tracking}
 
 To track the satellite and for orbit prediction, the GPredict software \cite{gpredict} will be used. Gpredict is a real-time satellite tracking and orbit prediction application. It can track many satellites and display their position and other data in lists, tables, maps, and polar plots (radar view). Gpredict can also predict the time of future passes for a satellite and provide detailed information about each pass. Gpredict is free software licensed under the GNU General Public License. A picture of the main window of GPredict can be seen in \autoref{fig:gpredict}.
 
@@ -265,7 +265,7 @@ To track the satellite and for orbit prediction, the GPredict software \cite{gpr
     \end{center}
 \end{figure}
 
-\subsection{Packet Transmission}
+\subsection{ \textcolor{red}{TODO} Packet Transmission}
 
 The packet generation and transmission to Radio Occultation satellite can be done with the SpaceLab-Transmitter software \cite{spacelab-transmitter}, which was written in Python with the interface developed using the GTK framework. It has a USRP Handler made with Ettus libraries to work with Ettus USRP B210 as shown in \autoref{fig:usrp-b210}. The supported modulation is the Gaussian Minimum Shift Keying (GMSK). Furthermore, the software also has unit tests for the main modules and a logging system to record events such as an initialization or a successfully transmitted telecommand.
 
@@ -287,7 +287,7 @@ In the \autoref{fig:transmitter-tree} is shown the product tree of the software,
     \end{center}
 \end{figure}
 
-\subsection{Packet Decoding}
+\subsection{ \textcolor{red}{TODO} Packet Decoding}
 
 The packet decoding of Radio Occultation satellites telemetry can be done using the SpaceLab-Decoder \cite{spacelab-decoder} software using a .wav file or through a real time reception. The decoded telemetry will appear in a dialog within the main window. The software was written in Python, and the interface was developed using GTK framework. Furthermore, the software also has unit tests for the main modules and a logging system to record events.
 
@@ -309,7 +309,7 @@ The \autoref{fig:decoder-tree} is showing the product tree of the software, whic
     \end{center}
 \end{figure}
 
-\section{EMMN Ground Station}
+\section{ \textcolor{red}{TODO} EMMN Ground Station}
 
 The EMMN\nomenclature{\textbf{EMMN}}{\textit{Estação Mutlimissão de Natal.}} (\textit{Estação Multimissão de Natal} in portuguese) ground station \cite{emmn} was designed to operate in VHF, UHF and S-Band frequency bands, receiving payload and telemetry data and transmitting telecommands from and to satellites operating in low orbits.
 
@@ -353,7 +353,7 @@ A general block diagram of the EMMN hardware is available in \autoref{fig:emmn-b
     \end{center}
 \end{figure}
 
-\section{Data Collection Platforms}
+\section{ \textcolor{red}{TODO} Data Collection Platforms}
 
 Data Collection Platforms (DCPs) are part of the Integrated System of Environmental Data (\textit{Sistema Integrado de Dados Ambientais, SINDA} \cite{sinda}, in Portuguese), which collects the data and by satellites, it is retransmitted to be received in the ground station so that it can be sent to SINDA to be processed. The data is shown online sometime after the receiving. Examples of DCPs can be seen in \autoref{fig:dcp-ex}.
 

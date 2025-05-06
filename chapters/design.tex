@@ -22,12 +22,12 @@
 % \date 2021/07/15
 %
 
-% \chapter{Design Description} \label{ch:design}
-\chapter{Service Module Overview} \label{ch:design}
+% \chapter{ \textcolor{red}{TODO} Design Description} \label{ch:design}
+\chapter{ \textcolor{red}{TODO} Service Module Overview} \label{ch:design}
 
 This section presents the design description of Radio Occultation.
 
-\section{General Diagrams}
+\section{ \textcolor{red}{TODO} General Diagrams}
 
 The CubeSat's subsystems are positioned in the 2U physical structure as exemplified in \autoref{fig:subsystems-positioning}. 
 % An exploded 3D satellite view is shown in \autoref{fig:exploded-view}.
@@ -40,7 +40,7 @@ The CubeSat's subsystems are positioned in the 2U physical structure as exemplif
     \end{center}
 \end{figure}
 
-\subsection{Power Diagram}
+\subsection{ \textcolor{red}{TODO} Power Diagram}
 
 In \autoref{fig:power-diagram} is presented a block diagram showing the satellite's power buses.
 The EPS module distributes these buses and has the ability to turn on and off some subsystems, while other modules also have direct control over some dc regulators\cite{eps2}.
@@ -60,7 +60,7 @@ The current values shown are the maximum capability and not the nominal operatin
 %   TBD 
 %   In \autoref{fig:datapath-diagram} there is a block diagram showing the satellite modules and the internal communication interfaces.
 
-\subsection{Data Path Diagram}
+\subsection{ \textcolor{red}{TODO} Data Path Diagram}
 
 The data path diagram is shown in \autoref{fig:data-path}.
 
@@ -72,7 +72,7 @@ The data path diagram is shown in \autoref{fig:data-path}.
     \end{center}
 \end{figure}
 
-\subsection{Deployment Sequence}
+\subsection{ \textcolor{red}{TODO} Deployment Sequence}
 
 The deployment sequence of the satellite is the routine to be executed just after the launch. The main objective of this operation is to deploy the antennas and prepare the satellite to start its normal operation.
 
@@ -90,7 +90,7 @@ The \autoref{fig:deployment-flowchart} has a flowchart that illustrates the depl
     \end{center}
 \end{figure}
 
-\subsection{Beacon Operation}
+\subsection{ \textcolor{red}{TODO} Beacon Operation}
 
 After the beacon microcontroller's boot sequence, the beacon's operation starts. The normal operation consists of reading the data from the EPS and the TTC modules, transmitting the valid data (EPS or TTC package, in this order of priority), waiting 60 seconds, and repeating this sequence. The \autoref{fig:beacon-flowchart} has a flowchart of this behavior.
 
@@ -102,7 +102,7 @@ After the beacon microcontroller's boot sequence, the beacon's operation starts.
     \end{center}
 \end{figure}
 
-\subsection{OBDH Operation}
+\subsection{ \textcolor{red}{TODO} OBDH Operation}
 
 After the boot sequence of the OBDH microcontroller, the operation of the OBDH starts. The regular operation consists of reading the housekeeping data from the EPS, TTC, payloads, antenna module, and the OBDH (its own housekeeping data), saving the read data on the non-volatile memory, and transmitting the housekeeping data of the satellite as a beacon. After that, it waits 60 seconds and checks if a new telecommand was received; if true, it processes the telecommand; if not, it does nothing. After this sequence, these steps start again. The \autoref{fig:obdh-flowchart} has a flowchart of this behavior.
 
@@ -126,7 +126,7 @@ Figure \autoref{fig:tc-flowchart} shows the telecommand processing flow.
     \end{center}
 \end{figure}
 
-\subsection{EPS Operation}
+\subsection{ \textcolor{red}{TODO} EPS Operation}
 
 The operation of the EPS microcontroller starts shortly after the release of the CubeSat in its orbit by the deployer.
 In the first 60 minutes, the module operation consists of reading the housekeeping data from its sensors and managing the duty cycles of the MPPT and heaters.
@@ -142,13 +142,13 @@ The \autoref{fig:eps-flowchart} has a flowchart of this behavior.
     \end{center}
 \end{figure}
 
-%\section{General Behaviour}
+%\section{ \textcolor{red}{TODO} General Behaviour}
 
 %.
 
-\section{Interface Data Sheet (IDS)}
+\section{ \textcolor{red}{TODO} Interface Data Sheet (IDS)}
 
-\subsection{Interface}
+\subsection{ \textcolor{red}{TODO} Interface}
 
 To electrically connect all the satellite modules, a PC-104 bus standard is being used. This bus is composed by 104 lines disposed by four rows of 26 pins each (with a vertical and horizontal pitch of 2,54 mm).
 
@@ -242,7 +242,7 @@ This project's distribution pattern of pins is a mix of multiple patterns from C
 
 Beyond the PC-104 bus, some signals are connected directly by wires and cables, like the control and power pins of the antenna module, the battery charger, and the programming ports.
 
-\subsection{Form Factor}
+\subsection{ \textcolor{red}{TODO} Form Factor}
 
 The form factor follows a similar specification of the PC-104 standard\cite{pc104-specification}.
 The connector used for the interface differs given the module; the isolation height and presence of a pin or receptacle are defined from the overall stack up of the subsystems inside the CubeSat 2U structure.
@@ -258,7 +258,7 @@ The PC-104 form factor used can be seen in \autoref{fig:pc104-form-factor}.
     \end{center}
 \end{figure}
 
-\section{Telecommunication}
+\section{ \textcolor{red}{TODO} Telecommunication}
 
 This section describes the configuration and behavior of the telecommunication subsystems of the satellite. There are three types of links available in the CubeSat: beacon, downlink, and uplink. The beacon link is a periodic transmission of packets with basic telemetry data of the satellite (containing data from the EPS or TTC subsystems). The downlink is the link used to receive all data from the satellite, including the results of all experiments, telemetry data, and telecommands feedback. Moreover, the uplink sends telecommands from a ground station to the satellite.
 
@@ -343,7 +343,7 @@ The ID of the subsystems, modules, and payloads are available in \autoref{tab:sy
     \label{tab:system-ids}
 \end{table}
 
-\subsection{Authentication}
+\subsection{ \textcolor{red}{TODO} Authentication}
 
 All the telecommands classified as private use an HMAC\nomenclature{\textbf{HMAC}}{\textit{Hash-based Message Authenticaion Code.}} authentication scheme. Every type of private telecommand has a unique 16-digit ASCII character key that with the telecommand sequence (or message) generates an 160-bits (20-bytes) hash sequence to be transmitted together with the packet payload. The used hash algorithm is the SHA-1\nomenclature{\textbf{SHA-1}}{\textit{Secure Hash Algorithm 1.}}. The \autoref{fig:hmac-diagram} illustrates this authentication method.
 
@@ -355,7 +355,7 @@ All the telecommands classified as private use an HMAC\nomenclature{\textbf{HMAC
     \end{center}
 \end{figure}
 
-\subsection{Operation Licenses}
+\subsection{ \textcolor{red}{TODO} Operation Licenses}
 
 %\textcolor{red}{COMMENT: tiramos essa parte?}
 
