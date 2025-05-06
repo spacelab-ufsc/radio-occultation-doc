@@ -152,7 +152,7 @@ Our Attitude Control System (ACS) is a passive attitude system, which uses Earth
 	</a>
 </p>
 
-<img align="right" width="25%" src="https://github.com/spacelab-ufsc/radio-occultation-doc/blob/main/figures/antennas/sband-antenna-top.png">
+<img align="right" width="25%" src="https://github.com/spacelab-ufsc/radio-occultation-doc/blob/main/figures/subsystems/sband-antenna-top.png">
 
 ​The S-Band Antenna project consists of developing an antenna for the S-Band frequency (2.200-2.290 GHz), which its initial goal is to be used in a mission of Radio Occultation for the downlink of data.​
 
@@ -173,7 +173,7 @@ Our Attitude Control System (ACS) is a passive attitude system, which uses Earth
 	</a>
 </p>
 
-<img align="right" width="25%" src="https://github.com/spacelab-ufsc/radio-occultation-doc/blob/main/figures/antennas/gnss-active-antenna-top.png">
+<img align="right" width="25%" src="https://github.com/spacelab-ufsc/radio-occultation-doc/blob/main/figures/subsystems/gnss-active-antenna-top.png">
 
 The GNSS Active Antenna project consists of developing an active antenna for the L1 band (1.565GHz), integrating a low noise amplifier (LNA) powered by a voltage regulator that converts 5V to 3.3V, with the power being injected into the coaxial line through a bias tee circuit.
 
@@ -208,7 +208,7 @@ The GNSS Active Antenna project consists of developing an active antenna for the
 -->
 
 <a href="https://github.com/spacelab-ufsc/radio-occultation-doc">
-<img align="right" width="25%" src="https://github.com/spacelab-ufsc/radio-occultation-doc/blob/main/figures/antennas/antenna-fd.png">
+<img align="right" width="25%" src="https://github.com/spacelab-ufsc/radio-occultation-doc/blob/main/figures/subsystems/antenna-fd.png">
 	
 </a>
 
