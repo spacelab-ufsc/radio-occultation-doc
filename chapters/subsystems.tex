@@ -63,36 +63,70 @@ Many conditions impact the detumbling time, which is the time required for the s
 The Radio Occultation satellite does not feature an orbit control subsystem.
 
 
-\section{ \textcolor{yellow}{Doing} S-Band Antenna}
+\section{\textcolor{yellow}{In Progress} – S-Band Antenna}
 
-        \begin{figure}[!t]
-        \caption{\label{patch_sim} Dimensões do elemento simulado, (a) frontal, (b) posterior}
-	    \centering
-	    \includegraphics[width= 0.7
-	    \textwidth]{figures/subsystems/sdf.jpg}
-        
-        \end{figure}
-        \begin{figure}[!b]
-        \caption{\label{S11_patch} Módulo do parâmetro $S_{11}$ em $[dB]$ da antena \textit{pacth} simulada no HFSS}
-	    \centering
-	    \includegraphics[width= 0.8
-	    \textwidth]{figuras/S11_patch.jpg}
-        
-        \end{figure}
+The S-Band Antenna project aims to develop a high-efficiency antenna operating in the 2.200–2.290 GHz range, compliant with the S-Band allocation for space-to-Earth communications. The main application is the downlink of scientific and telemetry data in a Radio Occultation mission. This antenna is designed to be integrated into a compact CubeSat platform.
 
-\section{ \textcolor{yellow}{Doing} GNSS Antenna}
+The antenna structure is based on a microstrip patch topology using a high-frequency dielectric substrate. It is optimized through electromagnetic simulations to provide a directional radiation pattern with sufficient gain (target > 6 dBi), low return loss (S\textsubscript{11} < –10 dB). The design also considers thermal and mechanical stability under launch and orbital conditions.
 
-\section{ \textcolor{yellow}{Doing} Antenna Module}
+Key characteristics:
+\begin{itemize}
+    \item \textbf{Frequency range:} 2.200–2.290 GHz (S-Band)
+    \item \textbf{Antenna type:} Planar microstrip patch
+    \item \textbf{Substrate:}  S1000-2M TG170 (or equivalent), $\varepsilon_r = 4.6$
+    \item \textbf{Polarization:} Circular
+    \item \textbf{Connector:} MCX (right-angle)
+    \item \textbf{Mounting:} Bottom face of the CubeSat
+\end{itemize}
+
+A picture of the current prototype is shown in \autoref{fig:ant-sband-top}.
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.6\textwidth]{figures/subsystems/sband-antenna-top.png}
+    \caption{SpaceLab S-Band Antenna Module}
+    \label{fig:ant-sband-top}
+\end{figure}
+
+
+\section{\textcolor{yellow}{In Progress} – GNSS Antenna}
+
+The GNSS Active Antenna project focuses on the development of a high-sensitivity antenna optimized for L1 band reception (centered at 1.57542 GHz), specifically for GPS system. It is intended for use in localization and orbit determination in a CubeSat platform.
+
+The antenna is based on a ceramic structure, with an integrated low-noise amplifier (LNA) to boost the received signal while minimizing system noise figure. The LNA is powered through a bias tee configuration, allowing DC power to be supplied through the RF coaxial line. A voltage regulator is used to convert 5 V to 3.3 V suitable for the LNA.
+
+Main features:
+\begin{itemize}
+    \item \textbf{Frequency band:} L1 (1.565–1.585 GHz)
+    \item \textbf{Antenna type:} Compact patch
+    \item \textbf{Gain:} aprox. 6 dBi (passive), > 25 dB (active, including LNA)
+    \item \textbf{LNA noise figure:} < 1.2 dB
+    \item \textbf{Power supply:} 5 V input, regulated to 3.3 V
+    \item \textbf{Power injection:} Coaxial line via bias tee
+    \item \textbf{Radiation pattern:} Hemispherical, optimized for zenith reception
+    \item \textbf{Mounting:} Top face of the CubeSat
+\end{itemize}
+
+A photo of the assembled prototype is shown in \autoref{fig:ant-gnss-top}.
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.6\textwidth]{figures/subsystems/gnss-active-antenna-top.png}
+    \caption{Prototype of the SpaceLab GNSS Active Antenna Module}
+    \label{fig:ant-gnss-top}
+\end{figure}
+
+\section{ \textcolor{yellow}{In Progress} Antenna Module}
 
 The SpaceLab Deployable Antenna Module is the first flight-capable version developed at SpaceLab. It is a four monopole antenna built with tape strings and compliant with the CubeSat standard. The deployment method is the burning wire, which can be controlled digitally through a CAN interface. To allow redundancy, two independent deployment controllers can be activated separately. Also, the construction of this module allows the installation of a solar panel at the top side.
 
-A picture of the antenna module (with all antennas released) can be seen in \autoref{fig:sl-antenna}. The chosen antenna configuration for this mission its V-dipole. To learn more about the different configurations, see \cite{ant-rad}.
+A picture of the antenna module (with all antennas released) can be seen in \autoref{fig:antenna-fd}. The chosen antenna configuration for this mission its V-dipole. To learn more about the different configurations, see \cite{ant-rad}.
 
 \begin{figure}[!ht]
     \begin{center}
         \includegraphics[width=0.8\textwidth]{figures/subsystems/antenna-fd.png}
         \caption{SpaceLab Deployable Antenna Module}
-        \label{fig:sl-antenna}
+        \label{fig:antenna-fd}
     \end{center}
 \end{figure}
 
@@ -103,7 +137,7 @@ A picture of the antenna module (with all antennas released) can be seen in \aut
             \item Antenna 1: UHF - \textcolor{red}{TBD} MHz (downlink)
             \item Antenna 2: UHF - \textcolor{red}{TBD} MHz (uplink)
         \end{itemize}
-    \item Tuning structure size: 6U
+    \item Tuning structure size: \textcolor{red}{TBD}
     \item Mounting position: Top and Bottom
     \item Supply voltage: 3.3 V
     \item CAN 
