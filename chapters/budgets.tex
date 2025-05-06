@@ -22,13 +22,13 @@
 % \date 2020/06/11
 %
 
-\chapter{Technical Budgets and Mission Analysis} \label{ch:budgets}
+\chapter{ \textcolor{red}{TODO} Technical Budgets and Mission Analysis} \label{ch:budgets}
 
 This chapter presents a general analysis of the mission, such as a preliminary analysis of the satellite's estimated orbit, estimated lifetime, and the amount of data exchanged along its operation.
 
 Another type of analysis presented is the satellite budgets, such as the power and link budgets.
 
-\section{Requirements}
+\section{ \textcolor{red}{TODO} Requirements}
 
 The mission requirements are listed next:
 
@@ -41,7 +41,7 @@ The mission requirements are listed next:
     \item The communications system must send the CubeSat telemetry using UHF radio.
     \item The communications system must be able to receive telecommands and respond to them accordingly.
     \item The attitude system must be able to perform a 1-axis stabilization of the CubeSat.
-    \item Radio Occultation must be able to receive and execute a shutdown telecommand, therefore ceasing all transmissions.
+    \item Radio Occultation must be able to receive and execute a shuTODOown telecommand, therefore ceasing all transmissions.
     \item The downlink transmissions must be done once at a time, either telemetry or beacon.
     \item The ground station must operate under the proper radio frequency communication licenses.
     \item Radio Occultation must comply with international and Brazilian radio license agreements and restrictions.
@@ -53,7 +53,7 @@ The mission requirements are listed next:
 \end{enumerate}
 
 
-\section{Orbit Parameters and Analysis}
+\section{ \textcolor{red}{TODO} Orbit Parameters and Analysis}
 
 % To define the orbit parameters and 
 To simulate the behavior of the satellite during its operation, the software SimCube developed at the SpaceLab was used. It is important to emphasize that the results presented in this chapter are preliminary, since the actual orbit parameters are yet to be defined and are subject to market availability.
@@ -111,7 +111,7 @@ The next sections present some analysis based on the results obtained from the s
 
 %The source files of the GMAT simulation are available in \cite{fsat2-mechanical}.
 
-\subsection{Lifetime Analysis}
+\subsection{ \textcolor{red}{TODO} Lifetime Analysis}
 
 Considering the same parameters of Radio Occultation, but with an initial altitude of 550 km, the simulations on SimCube showed that the satellite decays approximately in 2183 days ($\cong$ 6 years), as can be seen in \autoref{fig:lifetime-analysis}.
 
@@ -123,7 +123,7 @@ Considering the same parameters of Radio Occultation, but with an initial altitu
     \end{center}
 \end{figure}
 
-\subsection{Ground Station Passes and Data Transfer Analysis}
+\subsection{ \textcolor{red}{TODO} Ground Station Passes and Data Transfer Analysis}
 
 Considering two ground stations, one at the SpaceLab installations in Florianópolis (27$^{\circ}$ 36' 00.9" S, 48$^{\circ}$ 31' 03.2" W) and other at the INPE/CRN installations in Natal (5$^{\circ}$ 50' 10.1" S, 35$^{\circ}$ 12' 27.5" W), both with a minimum elevation of 15$^{\circ}$, the results in \autoref{tab:grs-contacts-analysis}) were achieved. %during the simulations on GMAT .
 
@@ -149,7 +149,7 @@ As seen from \autoref{tab:grs-contacts-analysis}, during the first 60 days of op
 
 These values can be even more significant if a smaller minimum elevation is considered, or with more ground stations in other locations.
 
-\section{Mass Budget} \label{mass-budget}
+\section{ \textcolor{red}{TODO} Mass Budget} \label{mass-budget}
 
 The mass budget of the satellite can be seen in \autoref{tab:mass-budget}.
 
@@ -186,7 +186,7 @@ The mass budget of the satellite can be seen in \autoref{tab:mass-budget}.
 
 According to the CubeSat standard \cite{cds}, the maximum mass of each unit must be 1.33 kg. As the Radio Occultation is a 2U CubeSat, the maximum allowed mass of the project is 2.66 kg. Considering the weight of each subsystem presented in \autoref{tab:mass-budget}, the current total mass of the object is below the maximum allowed, with a margin of 16 \%.
 
-\section{Power Budget} \label{power-budget}
+\section{ \textcolor{red}{TODO} Power Budget} \label{power-budget}
 
 According to section 10.3 of \cite{larson2005}, the power budget of a satellite can be determined through three steps:
 
@@ -196,7 +196,7 @@ According to section 10.3 of \cite{larson2005}, the power budget of a satellite 
     \item Estimate power degradation over mission life
 \end{enumerate}
 
-\subsection{Input Power}
+\subsection{ \textcolor{red}{TODO} Input Power}
 
 Simulations of the energy input to the solar panels along some orbits can be seen in the \autoref{fig:sp_sim_power} graph. Two extreme orbit scenarios, without and with maximum eclipse, were tested. The figures show the power generated on each side of the CubeSat, as well the total and average values.
 
@@ -232,7 +232,7 @@ From these simulations, the results in \autoref{tab:power-simulations} were obta
 \end{table}
 
 
-\subsection{Operating Power Budget}
+\subsection{ \textcolor{red}{TODO} Operating Power Budget}
 
 Typical operating voltages and current and power ranges consumed by each satellite subsystem are presented in \autoref{tab:power-requirements}.
 
@@ -294,7 +294,7 @@ The duty cycles of \autoref{tab:power-consumption} were defined according to the
 
 As can be seen from \autoref{fig:sp_sim_power} and \autoref{tab:power-consumption}, there is a slight positive margin of \textbf{76.9 mW} in the power budget.
 
-\subsection{Battery Sizing}
+\subsection{ \textcolor{red}{TODO} Battery Sizing}
 
 As described in \cite{larson2005}, the battery sizing of a satellite can be made by following the steps below:
 
@@ -361,7 +361,7 @@ All results from the battery sizing are available in \autoref{tab:battery-sizing
 
 From the results, the battery sizing is well suited for the current satellite configuration and the planned behavior.
 
-\subsection{Power Degradation Over Mission Life}
+\subsection{ \textcolor{red}{TODO} Power Degradation Over Mission Life}
 
 Two major events along the satellite operation should be considered in the power degradation analysis:
 
@@ -374,7 +374,7 @@ From \cite{larson2005}, 5 \% per year is a usual number for the solar panels' de
 
 %A partial discharge reduces stress and prolongs battery life, so does a partial charge. Elevated temperature and high currents also affect cycle life
 
-\section{Link Budget}
+\section{ \textcolor{red}{TODO} Link Budget}
 
 The link budget of all satellite radio links is available in \autoref{tab:link-budget-results}.
 
