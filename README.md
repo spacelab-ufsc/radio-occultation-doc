@@ -251,7 +251,7 @@ The solar panels are manufactures by TBD. The panels features protection diodes 
 	</a>
 </p>
 
-<img align="right" width="25%" src="https://github.com/spacelab-ufsc/radio-occultation-doc/blob/main/figures/subsystems/usiped-6u-structure.png">
+<img align="right" width="15%" src="https://github.com/spacelab-ufsc/radio-occultation-doc/blob/main/figures/subsystems/usiped-6u-structure.png">
 
 The USIPED 6-Unit CubeSat structure is developed as a generic, modular satellite structure based upon the CubeSat standard. The modular chassis allows for up to two 1-Unit stack of PCBs, or other modules, to be mounted inside the chassis, using the PC-104 standard and spacers attached to the structure. In addition, there are 4 slots in the middle section, providing space for the interface boards and the ACS. The solar panels and antennas are externally mounted, providing a complete mechanical solution.
 
