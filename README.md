@@ -96,7 +96,7 @@ The following sections describe the mission subsystems, which placement, positio
 
 <br><br>
 
-<a href="https://github.com/spacelab-ufsc/r0-antenna/graphs/contributors">
+<a href="https://github.com/spacelab-ufsc/ro-antenna/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=spacelab-ufsc/ro-antenna" />
 </a>
 
@@ -219,6 +219,9 @@ The SpaceLab Filamentar Antenna for CubeSats System 1U/3U contains up to four ta
 
 <br><br>
 
+<a href="https://github.com/spacelab-ufsc/ro-solar-panels/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=spacelab-ufsc/ro-solar-panels" />
+</a>
 
 ## Solar Panels
 
