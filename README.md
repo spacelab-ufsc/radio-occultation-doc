@@ -132,7 +132,7 @@ The following sections describe the mission subsystems, which placement, positio
 	</a>
 </p>
 
-<img align="right" width="25%" src="https://github.com/spacelab-ufsc/radio-occultation-doc/blob/main/figures/adcs.png">
+<img align="right" width="25%" src="https://github.com/spacelab-ufsc/radio-occultation-doc/blob/main/figures/subsystems/adcs.png">
 
 Our Attitude Control System (ACS) is a passive attitude system, which uses Earth's magnetic field to rotate and stabilize the satellite. The system is composed of one magnet to create a force to align the magnet with the Earth's magnetic field and four hysteresis bars to damp the cube oscillations and stabilize. They are placed in positions to minimize the magnet effect on the bars. As a passive magnetic attitude control system is used, it is possible to stabilize only two axis, and so, the cubesat will still rotate around one of its axis, even after stabilized.
 
@@ -234,10 +234,12 @@ The SpaceLab Filamentar Antenna for CubeSats System 1U/3U contains up to four ta
 	</a>
 </p>
 
-<img align="right" width="25%" src="https://github.com/spacelab-ufsc/radio-occultation-doc/blob/main/figures/orbital-solar-panel.png">
+<img align="right" width="25%" src="https://github.com/spacelab-ufsc/radio-occultation-doc/blob/main/figures/subsystems/ro-solar-panels-top.png">
 
 The solar panels are manufactures by TBD. The panels features protection diodes and high-efficiency solar cells, which are the CESI's CTJ-30 with dimensions 6.9 cm x 3.9 cm (area 26.5 cm2). This cell is qualified for space use by ESA with an efficiency of 30%.
 
+<br><br>
+<br><br>
 <br><br>
 
 ## USIPED - 6U Mechanical Structure
@@ -251,12 +253,13 @@ The solar panels are manufactures by TBD. The panels features protection diodes 
 	</a>
 </p>
 
-<img align="right" width="15%" src="https://github.com/spacelab-ufsc/radio-occultation-doc/blob/main/figures/subsystems/usiped-6u-structure.png">
+<img align="right" width="25%" src="https://github.com/spacelab-ufsc/radio-occultation-doc/blob/main/figures/subsystems/usiped-6u-structure.png">
 
 The USIPED 6-Unit CubeSat structure is developed as a generic, modular satellite structure based upon the CubeSat standard. The modular chassis allows for up to two 1-Unit stack of PCBs, or other modules, to be mounted inside the chassis, using the PC-104 standard and spacers attached to the structure. In addition, there are 4 slots in the middle section, providing space for the interface boards and the ACS. The solar panels and antennas are externally mounted, providing a complete mechanical solution.
 
 <br><br>
-
+<br><br>
+<br><br>
 
 # Service platform
 
@@ -286,7 +289,7 @@ SpaceLab FloripaSat-2 modules
 </p>
 
 <a href="https://github.com/spacelab-ufsc/obdh2">
-<img align="right" width="25%" src="https://github.com/spacelab-ufsc/obdh2/blob/main/doc/user_manual/figures/obdh2-pcb-top.png">
+<img align="right" width="25%" src="https://github.com/spacelab-ufsc/radio-occultation-doc/blob/main/figures/subsystems/obdh2-pcb-3d.png">
 </a>
 
 The SpaceLab OBDH2 (On-Board Data Handling 2.0) is one of the service modules developed for radio-occultation Cubesat Mission. The OBDH2 is responsible to synchronize actions and the data flow between other modules (ie. EPS, Payloads) and the Earth segment. It packs the generated data into data frames and transmit back to Earth through TTC module, or stores it on a non-volatile memory for later retrieval. Commands sent from Earth segment to the cubesat will be received by the radio transceivers located in the TTC module and redirected to the OBDH2, which takes the appropriate action or forward them to the responsible module. All the OBDH2 project, source and documentation files are available freely on a [GitHub repository](https://github.com/spacelab-ufsc/obdh2) under its respective licenses.
