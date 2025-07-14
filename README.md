@@ -73,10 +73,6 @@ The following sections describe the mission subsystems, which placement, positio
 
 <br><br>
 
-<a href="https://github.com/spacelab-ufsc/obdh2/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=spacelab-ufsc/ro-instrument" />
-</a>
-
 ## Radio Occultation Instrument
 
 <p align="left">
@@ -94,12 +90,11 @@ The following sections describe the mission subsystems, which placement, positio
 	</a>
 </p>
 
-<br><br>
-
-<a href="https://github.com/spacelab-ufsc/ro-antenna/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=spacelab-ufsc/ro-antenna" />
+<a href="https://github.com/spacelab-ufsc/obdh2/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=spacelab-ufsc/ro-instrument" />
 </a>
 
+<br><br>
 
 ## Radio Occultation Instrument Antenna
 
@@ -118,11 +113,11 @@ The following sections describe the mission subsystems, which placement, positio
 	</a>
 </p>
 
-<br><br>
-
-<a href="https://github.com/spacelab-ufsc/adcs/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=spacelab-ufsc/adcs" />
+<a href="https://github.com/spacelab-ufsc/ro-antenna/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=spacelab-ufsc/ro-antenna" />
 </a>
+
+<br><br>
 
 ## ADCS - Attitude Determination and Control System
 
@@ -132,6 +127,10 @@ The following sections describe the mission subsystems, which placement, positio
 	</a>
 </p>
 
+<a href="https://github.com/spacelab-ufsc/adcs/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=spacelab-ufsc/adcs" />
+</a>
+
 <img align="right" width="25%" src="https://github.com/spacelab-ufsc/radio-occultation-doc/blob/main/figures/subsystems/adcs.png">
 
 Our Attitude Control System (ACS) is a passive attitude system, which uses Earth's magnetic field to rotate and stabilize the satellite. The system is composed of one magnet to create a force to align the magnet with the Earth's magnetic field and four hysteresis bars to damp the cube oscillations and stabilize. They are placed in positions to minimize the magnet effect on the bars. As a passive magnetic attitude control system is used, it is possible to stabilize only two axis, and so, the cubesat will still rotate around one of its axis, even after stabilized.
@@ -139,10 +138,6 @@ Our Attitude Control System (ACS) is a passive attitude system, which uses Earth
 <br><br>
 <br><br>
 
-
-<a href="https://github.com/spacelab-ufsc/sband-antenna/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=spacelab-ufsc/sband-antenna" />
-</a>
 
 ## S-Band Antenna
 
@@ -152,6 +147,10 @@ Our Attitude Control System (ACS) is a passive attitude system, which uses Earth
 	</a>
 </p>
 
+<a href="https://github.com/spacelab-ufsc/sband-antenna/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=spacelab-ufsc/sband-antenna" />
+</a>
+
 <img align="right" width="25%" src="https://github.com/spacelab-ufsc/radio-occultation-doc/blob/main/figures/subsystems/sband-antenna-top.png">
 
 ​The S-Band Antenna project consists of developing an antenna for the S-Band frequency (2.200-2.290 GHz), which its initial goal is to be used in a mission of Radio Occultation for the downlink of data.​
@@ -159,11 +158,6 @@ Our Attitude Control System (ACS) is a passive attitude system, which uses Earth
 <br><br>
 <br><br>
 <br><br>
-
-
-<a href="https://github.com/spacelab-ufsc/gnss-active-antenna/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=spacelab-ufsc/gnss-active-antenna" />
-</a>
 
 ## GNSS Antenna
 
@@ -173,6 +167,10 @@ Our Attitude Control System (ACS) is a passive attitude system, which uses Earth
 	</a>
 </p>
 
+<a href="https://github.com/spacelab-ufsc/gnss-active-antenna/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=spacelab-ufsc/gnss-active-antenna" />
+</a>
+
 <img align="right" width="25%" src="https://github.com/spacelab-ufsc/radio-occultation-doc/blob/main/figures/subsystems/gnss-active-antenna-top.png">
 
 The GNSS Active Antenna project consists of developing an active antenna for the L1 band (1.565GHz), integrating a low noise amplifier (LNA) powered by a voltage regulator that converts 5V to 3.3V, with the power being injected into the coaxial line through a bias tee circuit.
@@ -180,12 +178,6 @@ The GNSS Active Antenna project consists of developing an active antenna for the
 <br><br>
 <br><br>
 <br><br>
-
-<!--
-<a href="https://github.com/spacelab-ufsc/antenna-fd/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=spacelab-ufsc/" />
-</a>
--->
 
 ## Filamentar Antenna
 
@@ -207,6 +199,12 @@ The GNSS Active Antenna project consists of developing an active antenna for the
 
 -->
 
+<!--
+<a href="https://github.com/spacelab-ufsc/antenna-fd/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=spacelab-ufsc/" />
+</a>
+-->
+
 <a href="https://github.com/spacelab-ufsc/radio-occultation-doc">
 <img align="right" width="25%" src="https://github.com/spacelab-ufsc/radio-occultation-doc/blob/main/figures/subsystems/antenna-fd.png">
 	
@@ -219,20 +217,17 @@ The SpaceLab Filamentar Antenna for CubeSats System 1U/3U contains up to four ta
 
 <br><br>
 
-<a href="https://github.com/spacelab-ufsc/ro-solar-panels/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=spacelab-ufsc/ro-solar-panels" />
-</a>
-
 ## Solar Panels
 
 <p align="left">
 	<a href="https://github.com/spacelab-ufsc/spacelab#versioning">
-		<img src="https://img.shields.io/badge/status-flight%20ready-green?style=for-the-badge">
-	</a>
-	<a href="https://github.com/spacelab-ufsc/spacelab#versioning">
-		<img src="https://img.shields.io/badge/purchased%20module-ORBITAL-lightgray?style=for-the-badge">
+		<img src="https://img.shields.io/badge/status-in%20development-red?style=for-the-badge">
 	</a>
 </p>
+
+<a href="https://github.com/spacelab-ufsc/ro-solar-panels/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=spacelab-ufsc/ro-solar-panels" />
+</a>
 
 <img align="right" width="25%" src="https://github.com/spacelab-ufsc/radio-occultation-doc/blob/main/figures/subsystems/ro-solar-panels-top.png">
 
@@ -267,10 +262,6 @@ SpaceLab FloripaSat-2 modules
 
 <br><br>
 
-<a href="https://github.com/spacelab-ufsc/obdh2/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=spacelab-ufsc/obdh2" />
-</a>
-
 ## OBDH - On-Board Data Handling
 
 <p align="left">
@@ -288,6 +279,10 @@ SpaceLab FloripaSat-2 modules
 	</a>
 </p>
 
+<a href="https://github.com/spacelab-ufsc/obdh2/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=spacelab-ufsc/obdh2" />
+</a>
+
 <a href="https://github.com/spacelab-ufsc/obdh2">
 <img align="right" width="25%" src="https://github.com/spacelab-ufsc/radio-occultation-doc/blob/main/figures/subsystems/obdh2-pcb-3d.png">
 </a>
@@ -296,9 +291,6 @@ The SpaceLab OBDH2 (On-Board Data Handling 2.0) is one of the service modules de
 
 <br><br>
 
-<a href="https://github.com/spacelab-ufsc/ttc2/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=spacelab-ufsc/ttc2" />
-</a>
 
 ## TTC - Telemetry, Tracking and Telecommand
 
@@ -317,6 +309,10 @@ The SpaceLab OBDH2 (On-Board Data Handling 2.0) is one of the service modules de
 	</a>
 </p>
 
+<a href="https://github.com/spacelab-ufsc/ttc2/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=spacelab-ufsc/ttc2" />
+</a>
+
 <a href="https://github.com/spacelab-ufsc/ttc2">
 <img align="right" width="25%" src="https://github.com/spacelab-ufsc/ttc2/blob/master/doc/user_manual/figures/ttc2_pcb_top.png">
 </a>
@@ -325,9 +321,6 @@ The TTC (or TT&C) is the communication module of the CubeSats from SpaceLab. It 
 
 <br><br>
 
-<a href="https://github.com/spacelab-ufsc/eps2/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=spacelab-ufsc/eps2" />
-</a>
 
 ## EPS - Electrical and Power System
 
@@ -346,6 +339,10 @@ The TTC (or TT&C) is the communication module of the CubeSats from SpaceLab. It 
 	</a>
 </p>
 
+<a href="https://github.com/spacelab-ufsc/eps2/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=spacelab-ufsc/eps2" />
+</a>
+
 <a href="https://github.com/spacelab-ufsc/eps2">
 <img align="right" width="25%" src="https://github.com/spacelab-ufsc/eps2/blob/master/doc/figures/eps2-pcb-top.png">
 </a>
@@ -354,9 +351,6 @@ The EPS2 has been designed to harvest, store and distribute energy for the radio
 
 <br><br>
 
-<a href="https://github.com/spacelab-ufsc/battery-module-4c/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=spacelab-ufsc/battery-module-4c" />
-</a>
 
 ## BATC4 - Battery Module 4 cells
 
@@ -375,6 +369,10 @@ The EPS2 has been designed to harvest, store and distribute energy for the radio
 	</a>
 </p>
 
+<a href="https://github.com/spacelab-ufsc/battery-module-4c/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=spacelab-ufsc/battery-module-4c" />
+</a>
+
 <a href="https://github.com/spacelab-ufsc/battery-module-4c">
 <img align="right" width="25%" src="https://github.com/spacelab-ufsc/battery-module-4c/blob/master/images/bat2-pcb-bottom.png">
 </a>
@@ -383,9 +381,6 @@ The battery module is a separeted board from the EPS in order to accommodate 4 l
 
 <br><br>
 
-<a href="https://github.com/spacelab-ufsc/interface-board/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=spacelab-ufsc/interface-board" />
-</a>
 
 ## IIP - Interstage Interface Panels
 
@@ -403,6 +398,10 @@ The battery module is a separeted board from the EPS in order to accommodate 4 l
 		<img alt="GitHub issues" src="https://img.shields.io/github/issues/spacelab-ufsc/interface-board?style=for-the-badge">
 	</a>
 </p>
+
+<a href="https://github.com/spacelab-ufsc/interface-board/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=spacelab-ufsc/interface-board" />
+</a>
 
 <a href="https://github.com/spacelab-ufsc/interface-board">
 <img align="right" width="25%" src="https://github.com/spacelab-ufsc/interface-board/blob/master/doc/figures/iip_fullset.PNG">
