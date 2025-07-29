@@ -90,10 +90,11 @@ The following sections describe the mission subsystems, which placement, positio
 	</a>
 </p>
 
-<a href="https://github.com/spacelab-ufsc/obdh2/graphs/contributors">
+<a href="https://github.com/spacelab-ufsc/ro-instrument/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=spacelab-ufsc/ro-instrument" />
 </a>
 
+<br><br>
 <br><br>
 
 ## Radio Occultation Instrument Antenna
@@ -118,6 +119,31 @@ The following sections describe the mission subsystems, which placement, positio
 </a>
 
 <br><br>
+<br><br>
+
+## Radio Occultation Simulator
+
+<p align="left">
+	<a href="https://github.com/spacelab-ufsc/spacelab#versioning">
+		<img src="https://img.shields.io/badge/status-in%20development-red?style=for-the-badge">
+	</a>
+	<a href="https://github.com/spacelab-ufsc/ro-simulator/releases">
+		<img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/spacelab-ufsc/ro-simulator?style=for-the-badge">
+	</a>
+	<a href="https://github.com/spacelab-ufsc/ro-simulator/commits/main">
+		<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/spacelab-ufsc/ro-simulator?style=for-the-badge">
+	</a>
+	<a href="https://github.com/spacelab-ufsc/ro-simulator/issues">
+		<img alt="GitHub issues" src="https://img.shields.io/github/issues/spacelab-ufsc/ro-simulator?style=for-the-badge">
+	</a>
+</p>
+
+<a href="https://github.com/spacelab-ufsc/ro-simulator/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=spacelab-ufsc/ro-simulator" />
+</a>
+
+<br><br>
+<br><br>
 
 ## ADCS - Attitude Determination and Control System
 
@@ -132,6 +158,25 @@ The following sections describe the mission subsystems, which placement, positio
 </a>
 
 <img align="right" width="25%" src="https://github.com/spacelab-ufsc/radio-occultation-doc/blob/main/figures/subsystems/adcs.png">
+
+Our Attitude Control System (ACS) is a passive attitude system, which uses Earth's magnetic field to rotate and stabilize the satellite. The system is composed of one magnet to create a force to align the magnet with the Earth's magnetic field and four hysteresis bars to damp the cube oscillations and stabilize. They are placed in positions to minimize the magnet effect on the bars. As a passive magnetic attitude control system is used, it is possible to stabilize only two axis, and so, the cubesat will still rotate around one of its axis, even after stabilized.
+
+<br><br>
+<br><br>
+
+## GNSS Module
+
+<p align="left">
+	<a href="https://github.com/spacelab-ufsc/spacelab#versioning">
+		<img src="https://img.shields.io/badge/status-in%20development-red?style=for-the-badge">
+	</a>
+</p>
+
+<a href="https://github.com/spacelab-ufsc/gnss-module/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=spacelab-ufsc/gnss-module" />
+</a>
+
+<img align="right" width="25%" src="https://github.com/spacelab-ufsc/radio-occultation-doc/blob/main/figures/subsystems/gnss-module.png">
 
 Our Attitude Control System (ACS) is a passive attitude system, which uses Earth's magnetic field to rotate and stabilize the satellite. The system is composed of one magnet to create a force to align the magnet with the Earth's magnetic field and four hysteresis bars to damp the cube oscillations and stabilize. They are placed in positions to minimize the magnet effect on the bars. As a passive magnetic attitude control system is used, it is possible to stabilize only two axis, and so, the cubesat will still rotate around one of its axis, even after stabilized.
 
