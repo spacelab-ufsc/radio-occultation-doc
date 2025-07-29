@@ -94,6 +94,8 @@ The following sections describe the mission subsystems, which placement, positio
   <img src="https://contrib.rocks/image?repo=spacelab-ufsc/ro-instrument" />
 </a>
 
+<!-- <img align="right" width="25%" src="https://github.com/spacelab-ufsc/radio-occultation-doc/blob/main/figures/subsystems/ro-instrument.png"> -->
+
 <br><br>
 <br><br>
 
@@ -118,6 +120,10 @@ The following sections describe the mission subsystems, which placement, positio
   <img src="https://contrib.rocks/image?repo=spacelab-ufsc/ro-antenna" />
 </a>
 
+<!-- <img align="right" width="25%" src="https://github.com/spacelab-ufsc/radio-occultation-doc/blob/main/figures/subsystems/ro-antenna.png"> -->
+
+​The Radio Occultation Antenna project consists of developing an antenna for the GNSS L1 frequency (1.575 GHz), which its initial goal is to be used in a mission of Radio Occultation for the GNSS adquisition data.​
+
 <br><br>
 <br><br>
 
@@ -141,6 +147,10 @@ The following sections describe the mission subsystems, which placement, positio
 <a href="https://github.com/spacelab-ufsc/ro-simulator/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=spacelab-ufsc/ro-simulator" />
 </a>
+
+<!-- <img align="right" width="25%" src="https://github.com/spacelab-ufsc/radio-occultation-doc/blob/main/figures/subsystems/ro-simulator.png"> -->
+
+This project has been developed to simulate Global Navigation Satellite System (GNSS) signals, for research and development purposes in the SpaceLab laboratory. It is useful for academics, engineers, and enthusiasts working with satellite navigation technologies.
 
 <br><br>
 <br><br>
@@ -176,9 +186,9 @@ Our Attitude Control System (ACS) is a passive attitude system, which uses Earth
   <img src="https://contrib.rocks/image?repo=spacelab-ufsc/gnss-module" />
 </a>
 
-<img align="right" width="25%" src="https://github.com/spacelab-ufsc/radio-occultation-doc/blob/main/figures/subsystems/gnss-module.png">
+<!-- <img align="right" width="25%" src="https://github.com/spacelab-ufsc/radio-occultation-doc/blob/main/figures/subsystems/gnss-module.png"> -->
 
-Our Attitude Control System (ACS) is a passive attitude system, which uses Earth's magnetic field to rotate and stabilize the satellite. The system is composed of one magnet to create a force to align the magnet with the Earth's magnetic field and four hysteresis bars to damp the cube oscillations and stabilize. They are placed in positions to minimize the magnet effect on the bars. As a passive magnetic attitude control system is used, it is possible to stabilize only two axis, and so, the cubesat will still rotate around one of its axis, even after stabilized.
+This module calculates and tracks the orbital positions of GNSS satellites (GPS, GLONASS, Galileo, BeiDou) in real time by processing ephemeris and almanac data.
 
 <br><br>
 <br><br>
@@ -300,7 +310,9 @@ The USIPED 6-Unit CubeSat structure is developed as a generic, modular satellite
 <br><br>
 <br><br>
 <br><br>
-
+<br><br>
+<br><br>
+#
 # Service platform
 
 SpaceLab FloripaSat-2 modules
