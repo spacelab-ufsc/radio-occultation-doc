@@ -51,7 +51,7 @@ With its own RO data, Brazil will be able to routinely feed numerical weather pr
 This documentation structure is described in the <a href="#repository-organization">repository organization</a> section.
 
 <p align="center">
-    <img width="65%" src="https://github.com/spacelab-ufsc/radio-occultation-doc/blob/main/figures/rocus-sat.png" />
+    <img width="65%" src="https://github.com/spacelab-ufsc/radio-occultation-doc/blob/main/figures/rocus-sat-3d.png" />
 </p>
 
 # Mission Statement
